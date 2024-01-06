@@ -7,13 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import {MatDialogModule} from "@angular/material/dialog";
+
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmpAddEditComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
