@@ -9,10 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 import {MatDialogModule} from "@angular/material/dialog";
-
-
-
-
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -26,7 +23,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
