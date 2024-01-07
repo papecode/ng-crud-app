@@ -2,13 +2,20 @@
 <div class="p-6 bg-gray-100">
   <h1 class="text-xl font-bold mb-4">Formulaire Employés</h1>
   <div>
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="fillInput">Fill form field</label>
-      <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" type="text" id="fillInput" placeholder="Placeholder">
+    <div class="flex mb-4">
+      <div class="flex-1 mr-2">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="nomInput">Nom</label>
+        <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" type="text" id="nomInput" placeholder="Placeholder">
+      </div>
+      <div class="flex-1 ml-2">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="prenomInput">Prénom</label>
+        <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" type="text" id="prenomInput" placeholder="Placeholder">
+      </div>
     </div>
+
   </div>
   <div class="flex justify-end space-x-4">
-    <button class="px-4 py-2 text-gray-700 bg-gray-300 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:border-blue-300">Annuler</button>
+    <button class="px-6 py-2 text-gray-700 bg-gray-300 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:border-blue-300">Annuler</button>
     <button class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Enregistrer</button>
   </div>
 </div>
