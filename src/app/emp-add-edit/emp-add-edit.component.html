@@ -1,14 +1,21 @@
 
-<div mat-dialog-title>
-  <h1>Formulaire Employés</h1>
-</div>
-<div mat-dialog-content>
-  <mat-form-field appearance="fill">
-    <mat-label>Fill form field</mat-label>
-    <input matInput placeholder="Placeholder">
-  </mat-form-field>
-</div>
-<div mat-dialog-actions>
-  <button mat-raised-button>Annuler</button>
-  <button mat-raised-button color="primary">Enregistrer</button>
+<div class="p-6 bg-gray-100">
+  <!-- Titre du formulaire -->
+  <h1 class="text-xl font-bold mb-4">Formulaire Employés</h1>
+
+  <!-- Contenu du formulaire -->
+  <div>
+    <!-- Champ de formulaire rempli -->
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="fillInput">Fill form field</label>
+      <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" type="text" id="fillInput" placeholder="Placeholder">
+    </div>
+  </div>
+
+  <!-- Actions du formulaire -->
+  <div class="flex justify-end space-x-4">
+    <!-- Bouton Annuler -->
+    <button class="px-4 py-2 text-gray-700 bg-gray-300 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:border-blue-300">Annuler</button>
+    <button class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Enregistrer</button>
+  </div>
 </div>
