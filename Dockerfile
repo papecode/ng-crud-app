@@ -1,5 +1,5 @@
 ### STAGE 1: Définir le répertoire de travail ###
-FROM node:14.17.0-alpine as build
+FROM node:20.0.0-alpine as build
 WORKDIR /usr/src/app
 COPY package.json ./
 RUN npm install
@@ -7,7 +7,5 @@ COPY . .
 RUN npm run build
 
 ### STAGE 2: ###
-FROM nginx:1.17.1-alpine
-COPY nginx.conf /etc/nginx/conf.d/nginx.conf
-COPY --from=build /usr/src/app/dist/ng-crud-app /usr/share/nginx/html
-EXPOSE 80
+FROM httpd:2.4-alpine
+COPY --from=build /usr/src/app/dist/ng-crud-app/ /usr/local/apache2/htdocs/
